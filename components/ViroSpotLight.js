@@ -10,7 +10,7 @@
  * @flow
  */
 'use strict';
-
+import createReactClass from 'create-react-class'
 import { requireNativeComponent, View, StyleSheet, Platform } from 'react-native';
 import React, { Component } from 'react';
 import normalizeColor from "react-native/Libraries/StyleSheet/normalizeColor"
@@ -21,7 +21,7 @@ var ColorPropType = require('react-native').ColorPropType;
 /**
  * Used to render a ViroSpotLight
  */
-var ViroSpotLight = React.createClass({
+var ViroSpotLight = createReactClass({
   propTypes: {
     ...View.propTypes,
     position: PropTypes.arrayOf(PropTypes.number),

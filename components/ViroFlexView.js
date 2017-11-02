@@ -16,7 +16,7 @@ import {
   View,
   findNodeHandle
 } from 'react-native';
-
+import createReactClass from 'create-react-class'
 import React from 'react';
 
 var NativeModules = require('react-native/Libraries/BatchedBridge/NativeModules');
@@ -35,7 +35,7 @@ var NativeModules = require('react-native').NativeModules;
 /**
  * Used to render a ViroFlexView
  */
-var ViroFlexView = React.createClass({
+var ViroFlexView = createReactClass({
   propTypes: {
     ...View.propTypes,
     position: PropTypes.arrayOf(PropTypes.number),

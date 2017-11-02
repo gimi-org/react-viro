@@ -15,13 +15,13 @@ import { requireNativeComponent, View, StyleSheet, findNodeHandle } from 'react-
 import React, { Component } from 'react';
 var NativeModules = require('react-native').NativeModules;
 import PropTypes from 'prop-types';
-
+import createReactClass from 'create-react-class'
 import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
 
 /**
  * Used to render a Viro3DObject
  */
-var Viro3DObject = React.createClass({
+var Viro3DObject = createReactClass({
   propTypes: {
     ...View.propTypes,
     position: PropTypes.arrayOf(PropTypes.number),

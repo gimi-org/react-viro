@@ -10,7 +10,7 @@
  */
 
 'use strict';
-
+import createReactClass from 'create-react-class'
 import React, { Component } from 'react';
 import { requireNativeComponent, View, StyleSheet, findNodeHandle } from 'react-native';
 import PropTypes from 'prop-types';
@@ -19,7 +19,7 @@ var NativeModules = require('react-native').NativeModules;
 /**
  * Used to render a ViroSphere
  */
-var ViroSphere = React.createClass({
+var ViroSphere = createReactClass({
   propTypes: {
     ...View.propTypes,
     position: PropTypes.arrayOf(PropTypes.number),

@@ -10,7 +10,7 @@
  * @flow
  */
 'use strict';
-
+import createReactClass from 'create-react-class'
 import { requireNativeComponent, View, StyleSheet, Platform } from 'react-native';
 import React, { Component } from 'react';
 import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
@@ -25,7 +25,7 @@ var ColorPropType = require('react-native').ColorPropType;
 /**
  * Used to render a skybox as a scene background.
  */
-var ViroSkybox = React.createClass({
+var ViroSkybox = createReactClass({
 
   propTypes: {
     ...View.propTypes,

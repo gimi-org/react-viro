@@ -10,9 +10,10 @@
 import { requireNativeComponent, View, findNodeHandle } from 'react-native';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import createReactClass from 'create-react-class'
 var NativeModules = require('react-native').NativeModules;
 
-var ViroPolyline = React.createClass({
+var ViroPolyline = createReactClass({
   propTypes: {
     ...View.propTypes,
     points: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),

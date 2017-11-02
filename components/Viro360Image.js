@@ -15,11 +15,11 @@ import { requireNativeComponent, View, StyleSheet } from 'react-native';
 import React, { Component } from 'react';
 import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
 import PropTypes from 'prop-types';
-
+import createReactClass from 'create-react-class'
 /**
  * Used to render a 360 image in a sphere.
  */
-var Viro360Image = React.createClass({
+var Viro360Image = createReactClass({
 
   propTypes: {
     ...View.propTypes,

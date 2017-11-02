@@ -20,14 +20,14 @@ import {
 } from 'react-native';
 import React, { Component } from 'react';
 import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
-
+import createReactClass from 'create-react-class'
 import PropTypes from 'prop-types';
 var NativeModules = require('react-native').NativeModules;
 
 /**
  * Used to render a 360 video on the background sphere.
  */
-var Viro360Video = React.createClass({
+var Viro360Video = createReactClass({
   propTypes: {
     ...View.propTypes,
 

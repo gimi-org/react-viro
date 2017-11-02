@@ -10,7 +10,7 @@
  * @flow
  */
 'use strict';
-
+import createReactClass from 'create-react-class'
 import { requireNativeComponent, View, findNodeHandle} from 'react-native';
 import React, { Component } from 'react';
 var NativeModules = require('react-native').NativeModules;
@@ -25,7 +25,7 @@ var stylePropType = StyleSheetPropType(TextStylePropTypes);
 /**
  * Used to render a ViroText
  */
-var ViroText = React.createClass({
+var ViroText = createReactClass({
   propTypes: {
     ...View.propTypes,
     position: PropTypes.arrayOf(PropTypes.number),

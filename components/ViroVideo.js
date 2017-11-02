@@ -13,12 +13,13 @@ import {
   findNodeHandle,
   Platform,
 } from 'react-native';
+import createReactClass from 'create-react-class'
 import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
 import React, { Component } from 'react';
 var NativeModules = require('react-native').NativeModules;
 import PropTypes from 'prop-types';
 
-var ViroVideo = React.createClass({
+var ViroVideo = createReactClass({
   propTypes: {
     ...View.propTypes,
     position: PropTypes.arrayOf(PropTypes.number),

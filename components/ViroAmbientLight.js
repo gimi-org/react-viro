@@ -14,6 +14,7 @@
 
 import { requireNativeComponent, View, StyleSheet, Platform } from 'react-native';
 import React, { Component } from 'react';
+import createReactClass from 'create-react-class'
 import normalizeColor from "react-native/Libraries/StyleSheet/normalizeColor"
 var NativeModules = require('react-native').NativeModules;
 import PropTypes from 'prop-types';
@@ -23,7 +24,7 @@ var ColorPropType = require('react-native').ColorPropType;
 /**
  * Used to render a ViroAmbientLight
  */
-var ViroAmbientLight = React.createClass({
+var ViroAmbientLight = createReactClass({
   propTypes: {
     ...View.propTypes,
     color: ColorPropType,

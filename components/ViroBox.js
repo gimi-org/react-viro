@@ -10,9 +10,10 @@
 import { requireNativeComponent, View, findNodeHandle } from 'react-native';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import createReactClass from 'create-react-class'
 var NativeModules = require('react-native').NativeModules;
 
-var ViroBox = React.createClass({
+var ViroBox = createReactClass({
   propTypes: {
     ...View.propTypes,
     position: PropTypes.arrayOf(PropTypes.number),

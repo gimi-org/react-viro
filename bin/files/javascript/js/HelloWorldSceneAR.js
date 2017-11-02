@@ -1,15 +1,14 @@
 'use strict';
 
 import React, { Component } from 'react';
-
 import {StyleSheet} from 'react-native';
-
+import createReactClass from 'create-react-class'
 import {
   ViroARScene,
   ViroText,
 } from 'react-viro';
 
-var HelloWorldSceneAR = React.createClass({
+var HelloWorldSceneAR = createReactClass({
   getInitialState() {
     return {
       text : "Initializing AR..."
@@ -30,9 +29,8 @@ var styles = StyleSheet.create({
     fontSize: 30,
     color: '#ffffff',
     textAlignVertical: 'center',
-    textAlign: 'center',  
+    textAlign: 'center',
   },
 });
 
 module.exports = HelloWorldSceneAR;
-

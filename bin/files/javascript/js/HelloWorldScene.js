@@ -3,14 +3,14 @@
 import React, { Component } from 'react';
 
 import {StyleSheet} from 'react-native';
-
+import createReactClass from 'create-react-class'
 import {
   ViroScene,
   ViroText,
   Viro360Image,
 } from 'react-viro';
 
-var HelloWorldScene = React.createClass({
+var HelloWorldScene = createReactClass({
   getInitialState() {
     return {
 
@@ -32,9 +32,8 @@ var styles = StyleSheet.create({
     fontSize: 60,
     color: '#ffffff',
     textAlignVertical: 'center',
-    textAlign: 'center',  
+    textAlign: 'center',
   },
 });
 
 module.exports = HelloWorldScene;
-

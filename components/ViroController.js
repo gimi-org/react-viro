@@ -13,8 +13,8 @@ import React, { Component } from 'react';
 var NativeModules = require('react-native').NativeModules;
 import PropTypes from 'prop-types';
 var ViroControllerModule = require('react-native').NativeModules.VRTControllerModule;
-
-var ViroController = React.createClass({
+import createReactClass from 'create-react-class'
+var ViroController = createReactClass({
 
   propTypes: {
     ...View.propTypes,

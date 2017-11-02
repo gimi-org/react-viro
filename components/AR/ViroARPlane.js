@@ -14,13 +14,13 @@
 import { requireNativeComponent, View, StyleSheet, findNodeHandle } from 'react-native';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import createReactClass from 'create-react-class'
 var NativeModules = require('react-native').NativeModules;
 
 /**
  * Container for Viro Components anchored to a detected plane.
  */
-var ViroARPlane = React.createClass({
+var ViroARPlane = createReactClass({
   propTypes: {
     ...View.propTypes,
     minHeight: PropTypes.number,

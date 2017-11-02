@@ -14,12 +14,13 @@
 import { requireNativeComponent, View, StyleSheet, findNodeHandle } from 'react-native';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import createReactClass from 'create-react-class'
 var NativeModules = require('react-native').NativeModules;
 
 /**
  * Frame that serves as a 'window' into a ViroPortal
  */
-var ViroPortal = React.createClass({
+var ViroPortal = createReactClass({
   propTypes: {
     ...View.propTypes,
     position: PropTypes.arrayOf(PropTypes.number),

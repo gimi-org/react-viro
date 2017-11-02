@@ -10,7 +10,7 @@
  * @flow
  */
 'use strict';
-
+import createReactClass from 'create-react-class'
 import { requireNativeComponent, View, findNodeHandle, Platform } from 'react-native';
 import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
 import React from 'react';
@@ -18,7 +18,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 var NativeModules = require('react-native').NativeModules;
 
-var ViroSoundField = React.createClass({
+var ViroSoundField = createReactClass({
   propTypes: {
     ...View.propTypes,
 
