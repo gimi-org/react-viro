@@ -1,8 +1,7 @@
 {
-  "name": "react-viro",
+  "name": "gimi-org/react-viro",
   "main": "index.js",
   "version": "2.0.0",
-  "license": "Refer to LICENSE file",
   "scripts": {
     "start": "echo 'I dont think you meant to run npm start here.'",
     "test": "jest",
