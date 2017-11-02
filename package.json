@@ -1,0 +1,31 @@
+{
+  "name": "react-viro",
+  "main": "index.js",
+  "version": "2.0.0",
+  "license": "Refer to LICENSE file",
+  "scripts": {
+    "start": "echo 'I dont think you meant to run npm start here.'",
+    "test": "jest",
+    "postinstall": "npm install -g ngrok@2.2.3"
+  },
+  "jest": {
+    "preset": "jest-react-native"
+  },
+  "peerDependencies": {
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.47.2"
+  },
+  "files": [
+    "components",
+    "android/react_viro",
+    "android/viro_renderer",
+    "android/gvr_common",
+    "ios/dist",
+    "ios/ViroReact.podspec",
+    "bin",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  }
+}
