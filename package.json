@@ -4,8 +4,7 @@
   "version": "2.0.0",
   "scripts": {
     "start": "echo 'I dont think you meant to run npm start here.'",
-    "test": "jest",
-    "postinstall": "npm install -g ngrok@2.2.3"
+    "test": "jest"
   },
   "jest": {
     "preset": "jest-react-native"
